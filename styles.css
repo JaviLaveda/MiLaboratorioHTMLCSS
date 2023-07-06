@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat regular';
+    src: url(asset/Montserrat/montserrat-regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'Montserrat bold';
+    src: url(asset/Montserrat/montserrat-bold-webfont.woff2);
+}
+
+.navbar {
+    display:flex;
+    width: 100%;
+    border-bottom-style: solid; border-bottom-width: 1px; 
+    justify-content: space-between;
+    position: fixed;
+    background-color: #ffffff;
+    align-items: center;
+    padding: 8px;
+}
+
+.menu {
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+}
+
+.colecciones {
+    font-family: 'Montserrat regular';
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    padding: 16px;
+}
+
+.colecciones a {
+    color: black;
+    text-decoration: none;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    display: flex;
+    padding-top: 128px;
+    padding-bottom: 48px;
+    padding-left: 32px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat bold';
+    font-size: 32px;
+    
+}
+
+.catalogo {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,3fr));
+    gap: 48px;
+    padding: 48px;
+    margin-left: 320px;
+    margin-right: 320px;
+    justify-content: center;
+    align-content: center;
+}
+
+.item {
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+}
+
+.foto img {
+    background-color: lightblue;
+    border-radius: 16px;
+    width: 280px;
+    display: flex;
+}
+
+
+.etiqueta {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.modelo {
+    font-family: 'Montserrat regular';
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    padding-left: 16px;
+}
+
+.precio {
+    font-family: 'Montserrat bold';
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    text-align: end;
+    padding-right: 16px;
+}
+
+.footer {
+    display: flex;
+    background-color:#212429;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer a {
+    /* background-color: blue; */
+    flex: 1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+}
+
+.footer p {
+    font-family: 'Montserrat regular';
+    font-size: 16px;    
+    color: rgb(255, 255, 255);
+    /* background-color: aqua; */
+    padding: 16px;
+}
+
+.footer img {
+    border-radius: 64px;
+    /* border: 1px solid red; */
+    padding: 16px;
+    background-color: #ffff;
+}
+
+
+@media (max-width: 980px) {
+    .menu {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .colecciones {
+        display: none;
+    }
+
+    .user {
+        display: none;
+    }
+
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 32px;
+    }
+
+    .footer div {
+        width: 100%;
+        /* background-color: aquamarine; */
+        border-bottom-style: solid ; border-bottom-width: 1px; border-bottom-color: #ffffff;
+        
+    }
+}
